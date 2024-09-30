@@ -28,8 +28,10 @@
                                 &kp LCTRL  &mt LEFT_ALT BACKSPACE  &lt 3 SPACE    &kp SPACE  &lt 2 ENTER  &lt 1 CAPS
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCROLL_UP SCROLL_DOWN>;
-       };
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp A B>;
+        };
 
         NAV {
             bindings = <
