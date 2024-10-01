@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
- 
+
 / {
     behaviors {
         gqt: global-quick-tap {
@@ -22,25 +22,24 @@
 
         BASE {
             bindings = <
-&kp Q             &kp W  &kp E  &kp R      &lt 5 T                                           &kp Y        &kp U       &kp I      &kp O    &kp P
-&kp A             &kp S  &kp D  &kp F      &kp G                                             &kp H        &kp J       &kp K      &kp L    &kp SEMI
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V      &lt 6 B                 &kp C_PP       &tog 4     &kp N        &kp M       &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH
-                                &kp LCTRL  &mt LEFT_ALT BACKSPACE  &lt 3 SPACE    &kp SPACE  &lt 2 ENTER  &lt 1 CAPS
+&kp Q             &kp W  &kp E  &kp R      &lt 5 T                                          &kp Y        &kp U        &kp I      &kp O    &kp P
+&kp A             &kp S  &kp D  &kp F      &kp G                                            &kp H        &kp J        &kp K      &kp L    &kp SEMI
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V      &lt 6 B                 &kp CAPSLOCK    &tog 4   &kp N        &kp M        &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH
+                                &kp LCTRL  &mt LEFT_ALT BACKSPACE  &lt 3 SPACE     &kp DEL  &lt 2 ENTER  &lt 1 RCTRL
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp A B>;
         };
 
         NAV {
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6    &kp N7     &kp N8    &kp N9     &kp N0
-&kp TAB    &none   &none   &none   &none                        &kp HOME  &kp LEFT   &kp UP    &kp RIGHT  &kp LS(SINGLE_QUOTE)
-&kp LSHFT  &none   &none   &none   &none     &trans    &trans   &kp END   &kp PG_UP  &kp DOWN  &kp PG_DN  &kp RSHFT
+&kp N1     &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
+&kp TAB    &none   &none   &none   &none                        &kp HOME  &kp LEFT  &kp UP    &kp RIGHT  &kp LS(SQT)
+&kp LSHFT  &none   &none   &none   &none     &trans    &trans   &kp END   &none     &kp DOWN  &none      &kp RSHFT
                            &trans  &kp LALT  &trans    &kp TAB  &kp BSPC  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         SYMB {
@@ -78,10 +77,10 @@
 
         PAD {
             bindings = <
-&none  &none  &none  &none  &none                  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
-&none  &none  &none  &none  &none                  &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
-                     &none  &none  &none    &none  &none  &none
+&none  &none  &none  &none  &none                  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
+&none  &none  &none  &none  &none                  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+&none  &none  &none  &none  &none  &none    &none  &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
+                     &none  &none  &none    &none  &kp KP_NUMBER_0  &kp EQUAL
             >;
         };
 
