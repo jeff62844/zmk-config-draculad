@@ -28,7 +28,9 @@
                                 &kp LCTRL  &mt LEFT_ALT BACKSPACE  &lt 3 SPACE     &kp DEL  &lt 2 ENTER  &lt 1 TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         NAV {
