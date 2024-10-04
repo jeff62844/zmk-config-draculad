@@ -22,7 +22,7 @@
 
         BASE {
             bindings = <
-&kp Q             &kp W  &kp E  &kp R      &kp T                                       &kp Y        &kp U      &kp I      &kp O    &kp P
+&kp Q             &kp W  &kp E  &kp R      &lt 5 T                                     &kp Y        &kp U      &kp I      &kp O    &kp P
 &kp A             &kp S  &kp D  &kp F      &kp G                                       &kp H        &kp J      &kp K      &kp L    &kp SEMI
 &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V      &lt 6 B        &to 5          &tog 4        &kp N        &kp M      &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH
                                 &kp LCTRL  &kp BACKSPACE  &lt 3 SPACE    &mt LALT DEL  &lt 2 ENTER  &lt 1 TAB
@@ -79,10 +79,10 @@
 
         PAD {
             bindings = <
-&none  &none  &none  &none  &none                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
-&none  &none  &none  &none  &none                          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
-&none  &none  &none  &none  &none          &to 0    &none  &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-                     &none  &kp BACKSPACE  &none    &none  &kp KP_NUMBER_0  &kp EQUAL
+&none     &none  &none  &none      &none                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&none     &none  &none  &none      &none                          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
+&kp LALT  &none  &none  &none      &none          &to 0    &none  &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+                        &kp LCTRL  &kp BACKSPACE  &none    &none  &kp KP_NUMBER_0  &kp EQUAL
             >;
 
             sensor-bindings =
