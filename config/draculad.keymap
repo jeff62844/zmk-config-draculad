@@ -36,10 +36,10 @@
 
         NAV {
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
-&kp TAB    &none   &none   &none   &none                        &kp HOME  &kp LEFT  &kp UP    &kp RIGHT  &kp SINGLE_QUOTE
-&kp LSHFT  &none   &none   &none   &none     &none     &none    &kp END   &kp LEFT  &kp DOWN  &kp RIGHT  &kp RSHFT
-                           &trans  &kp LALT  &trans    &kp DEL  &kp BSPC  &trans
+&kp N1     &kp N2  &kp N3  &kp N4  &kp N5                     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
+&kp TAB    &none   &none   &none   &none                      &kp HOME  &kp LEFT  &kp UP    &kp RIGHT  &kp SINGLE_QUOTE
+&kp LSHFT  &none   &none   &none   &none   &none     &none    &kp END   &kp LEFT  &kp DOWN  &kp RIGHT  &kp RSHFT
+                           &trans  &trans  &trans    &kp DEL  &kp BSPC  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
