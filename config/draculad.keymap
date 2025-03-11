@@ -116,10 +116,10 @@
 
         SDV {
             bindings = <
-&kp N1          &kp N2    &kp N3    &kp N4    &kp N5                           &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
-&msc SCRL_DOWN  &mkp MB3  &mkp MB2  &mkp MB1  &msc SCRL_UP                     &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans
-&trans          &kp ESC   &kp F     &trans    &trans        &trans     &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-                                    &KSE      &trans        &kp TAB    &trans  &trans  &KSE
+&kp N1  &kp N2    &kp N3    &kp N4     &kp N5                    &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
+&kp X   &kp LEFT  &kp UP    &kp RIGHT  &kp C                     &none   &kp LEFT  &kp UP    &kp RIGHT  &none
+&kp E   &kp LEFT  &kp DOWN  &kp RIGHT  &kp F   &none      &none  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none
+                            &KSE       &none   &kp TAB    &none  &none   &KSE
             >;
         };
     };
