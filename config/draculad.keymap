@@ -18,6 +18,16 @@
         };
     };
 
+    macros {
+        KSE: KSE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(TAB)>, <&macro_wait_time 20>, <&to 0>;
+
+            label = "KSE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -71,7 +81,7 @@
 
         PAD {
             bindings = <
-&none     &none  &none  &none      &none                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&to 7     &none  &none  &none      &none                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
 &none     &none  &none  &none      &none                          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
 &kp LALT  &none  &none  &none      &none          &to 0    &none  &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
                         &kp LCTRL  &kp BACKSPACE  &none    &none  &kp KP_NUMBER_0  &kp EQUAL
@@ -109,7 +119,16 @@
 &kp N1          &kp N2    &kp N3    &kp N4    &kp N5                           &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
 &msc SCRL_DOWN  &mkp MB3  &mkp MB2  &mkp MB1  &msc SCRL_UP                     &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans
 &trans          &kp ESC   &kp F     &trans    &trans        &trans     &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-                                    &trans    &trans        &kp TAB    &trans  &trans  &trans
+                                    &KSE      &trans        &kp TAB    &trans  &trans  &KSE
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
